@@ -33,7 +33,7 @@ class Program
             Console.WriteLine($"An error occurred: {ex.Message}");
         }
 
-        Console.WriteLine("Waiting for second window to launch");
+        Console.WriteLine("Waiting 5 seconds for second window to launch");
         // waiting for 5 seconds
         Thread.Sleep(5000);
        
