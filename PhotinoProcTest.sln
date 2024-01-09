@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotinoProcTest", "PhotinoProcTest\PhotinoProcTest.csproj", "{6537AD7F-C091-47FC-9DC3-ECE4177C40B1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3883B84A-2092-43C8-8A8B-6CD74D8819C1} = {3883B84A-2092-43C8-8A8B-6CD74D8819C1}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotinoAOT", "PhotinoAOT\PhotinoAOT.csproj", "{3883B84A-2092-43C8-8A8B-6CD74D8819C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6537AD7F-C091-47FC-9DC3-ECE4177C40B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6537AD7F-C091-47FC-9DC3-ECE4177C40B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6537AD7F-C091-47FC-9DC3-ECE4177C40B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6537AD7F-C091-47FC-9DC3-ECE4177C40B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3883B84A-2092-43C8-8A8B-6CD74D8819C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3883B84A-2092-43C8-8A8B-6CD74D8819C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3883B84A-2092-43C8-8A8B-6CD74D8819C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3883B84A-2092-43C8-8A8B-6CD74D8819C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7953DCF4-8EF4-446D-8590-C4476269F24E}
+	EndGlobalSection
+EndGlobal
