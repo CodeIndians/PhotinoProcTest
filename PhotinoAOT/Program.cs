@@ -50,12 +50,11 @@ namespace PhotinoAOT
                 int workAreaWidth = window.MainMonitor.WorkArea.Width;
                 int workAreaHeight = window.MainMonitor.WorkArea.Height;
 
-                int width = random.Next(400, 800);
+                int width = 500;
                 int height = (int)Math.Round(width * 0.625, 0);
 
-                int offset = 20;
-                int left = random.Next(offset, workAreaWidth - width - offset);
-                int top = random.Next(offset, workAreaHeight - height - offset);
+                int left = workAreaWidth - width;
+                int top =workAreaHeight - height;
 
                 _childCount++;
 
