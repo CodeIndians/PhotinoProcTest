@@ -68,11 +68,12 @@ namespace PhotinoAOT
                     .SetLeft(left)
                     .RegisterWebMessageReceivedHandler(CloseWindowMessageDelegate)
                     .Load("wwwroot/random.html")
+                    .SetChromeless(true)
                     .WaitForClose();
             }
         }
 
-        static void FirstWindowMessageDelegate(object ? sender, string message)
+        static void FirstWindowMessageDelegate(object? sender, string message)
         {
             if (sender == null)
                 return;
@@ -81,31 +82,7 @@ namespace PhotinoAOT
 
             if (message == "first-window")
             {
-                var random = new Random();
-
-                int workAreaWidth = window.MainMonitor.WorkArea.Width;
-                int workAreaHeight = window.MainMonitor.WorkArea.Height;
-
-                int width = random.Next(400, 800);
-                int height = (int)Math.Round(width * 0.625, 0);
-
-                int offset = 20;
-                int left = random.Next(offset, workAreaWidth - width - offset);
-                int top = random.Next(offset, workAreaHeight - height - offset);
-
-                _childCount++;
-
-                new PhotinoWindow()
-                    .SetTitle($"First Window ({_childCount})")
-                    .SetUseOsDefaultSize(false)
-                    .SetHeight(height)
-                    .SetWidth(width)
-                    .SetUseOsDefaultLocation(false)
-                    .SetTop(top)
-                    .SetLeft(left)
-                    .RegisterWebMessageReceivedHandler(CloseWindowMessageDelegate)
-                    .Load("wwwroot/random.html")
-                    .WaitForClose();
+                window.Size = new System.Drawing.Size(1000, 700);
             }
         }
     }
